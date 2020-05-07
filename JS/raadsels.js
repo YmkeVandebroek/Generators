@@ -93,7 +93,7 @@ function toonAntwoord(){
   if (mijnParagraaf.innerHTML===raadsel1) {
     mijnParagraaf.innerHTML=antwoord1;
     vertellen3.setAttribute("src", "audio/Raadsels/antwoord1.mp3");
-      if (inputGebruiker.value.includes("sleutelgat", "glazen")) {
+      if (inputGebruiker.value.includes("sleutelgat" && "glazen" && "deur")) {
         antwoordGebruikerVeld.classList.add("juist");
       } else {
         antwoordGebruikerVeld.classList.add("fout");
@@ -101,7 +101,7 @@ function toonAntwoord(){
   } else if (mijnParagraaf.innerHTML===raadsel2) {
     mijnParagraaf.innerHTML=antwoord2;
     vertellen3.setAttribute("src", "audio/Raadsels/antwoord2.mp3");
-      if (inputGebruiker.value.includes("aanhouder", "wint")) {
+      if (inputGebruiker.value.includes("aanhouder" && "wint")) {
         antwoordGebruikerVeld.classList.add("juist");
       } else {
         antwoordGebruikerVeld.classList.add("fout");
@@ -109,7 +109,7 @@ function toonAntwoord(){
   } else if (mijnParagraaf.innerHTML===raadsel3) {
     mijnParagraaf.innerHTML=antwoord3;
     vertellen3.setAttribute("src", "audio/Raadsels/antwoord3.mp3");
-      if (inputGebruiker.value.includes("weekend", "zit")) {
+      if (inputGebruiker.value.includes("weekend" && "zit")) {
         antwoordGebruikerVeld.classList.add("juist");
       } else {
         antwoordGebruikerVeld.classList.add("fout");
@@ -117,7 +117,9 @@ function toonAntwoord(){
   } else if (mijnParagraaf.innerHTML===raadsel4) {
     mijnParagraaf.innerHTML=antwoord4;
     vertellen3.setAttribute("src", "audio/Raadsels/antwoord4.mp3");
-      if (inputGebruiker.value.includes("meten", "geslapen")) {
+      if (inputGebruiker.value.includes("meten" && "geslapen")) {
+        antwoordGebruikerVeld.classList.add("juist");
+      } else if (inputGebruiker.value.includes("meten" && "slaap")){
         antwoordGebruikerVeld.classList.add("juist");
       } else {
         antwoordGebruikerVeld.classList.add("fout");
