@@ -1,0 +1,39 @@
+h1{
+	font-size: 2rem;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+h2{
+	font-size: 1.5rem;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+p{
+	font-size: 1.5rem;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+button{
+	margin: 2rem 47vw;
+}
+
+.lach:focus{
+	background-color: blue;
+}
+
+img{
+	width: 20vw;
+	margin: 1vh 40vw;
+}
+
+.onzichtbaar{
+	display: none;
+	border: 1rem solid black;
+}
+
+.pinken{
+	background-color: red;
+}
