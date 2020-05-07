@@ -1,0 +1,23 @@
+h1{
+	font-size: 2rem;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+.grid{
+	display: grid;
+	grid-template-columns: 1fr;
+	width: 90vw;
+	text-align: center;
+	margin: 2vh 5vw;
+	background-color: red;
+	padding: 0.5rem;
+	grid-gap: 0.5rem;
+}
+
+a{
+	background-color: white;
+	padding: 2rem;
+	font-size: 1.5rem;
+	color: black;
+}
