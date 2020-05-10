@@ -14,7 +14,7 @@ let mijnParagraaf = document.getElementsByTagName("p")[0];
 let mop1 = "Te koop aangeboden: Citroën C4. Ideaal om aan een ontslagen werknemer te geven als afscheidsgeschenk.";
 let mop2 = "Een interviewer interviewt een goochelaar. Zegt de interviewer wat is uw favoriete nummer? Zegt de goochelaar: Het doorgezaagde meisje. Zegt de interviewer: Heeft u ook kinderen? De goochelaar zegt: Ja, twee en een half.";
 let mop3 = "Een Belg, en twee Engelsen krijgen een botsing. Zegt de Engelse: “I am sorry.” Zegt de 2e Engelse: “I am sorry too.” Zegt de Belg: “I am sorry 3.”";
-let mop4 = "Het nieuws in België: Dit weekend zijn er zes mensen omgekomen in het verkeer. Drie door een auto-ongeluk en drie tijdens de reconstructie.";
+let mop4 = "Het nieuws in Holland: Dit weekend zijn er zes mensen omgekomen in het verkeer. Drie door een auto-ongeluk en drie tijdens de reconstructie.";
 
 /*De moppen waaruit gekozen kan worden*/
 let mijnMoppen = [mop1, mop2, mop3, mop4];
@@ -74,22 +74,7 @@ function wachten(){
   mijnParagraaf.innerHTML="";
   drum.classList.remove("onzichtbaar");
   visueelLachen.classList.add("onzichtbaar");
-  mijnKnop.classList.remove("pinken");
   mijnKnop.classList.add("onzichtbaar");
-}
-
-/*We schrijven een functie die a.h.v. een willekeurig getal de moppen kiest*/
-effecten.onended = function() {
-  vertellen.play();
-  if (mijnParagraaf.innerHTML===mop1) {
-    vertellen.setAttribute("src", "audio/Moppen/mop1.mp3");
-  } else if (mijnParagraaf.innerHTML===mop2) {
-    vertellen.setAttribute("src", "audio/Moppen/mop2.mp3");
-  } else if (mijnParagraaf.innerHTML===mop3) {
-    vertellen.setAttribute("src", "audio/Moppen/mop3.mp3");
-  } else if (mijnParagraaf.innerHTML===mop4) {
-    vertellen.setAttribute("src", "audio/Moppen/mop4.mp3");
-  }
 }
 
 /*Functie voor afspelen mop na de laadfucntie*/
@@ -115,7 +100,6 @@ effecten.onended = function() {
 vertellen.onended = function() {
   lachGeluid.play();
   visueelLachen.classList.remove("onzichtbaar");
-  mijnKnop.classList.add("pinken");
 };
 
 /*Functie die ervoor zorgt dat de geluiden stoppen als op de knop "volgende mop" gedrukt wordt*/
